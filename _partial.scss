@@ -1,0 +1,21 @@
+$para: "para";
+$h1:"h1";
+$red:red;
+$yellow:yellow;
+p.#{$para} {
+   color: $red;
+   @media only screen and (max-width:768px) {
+    color: $yellow; 
+   
+}
+}
+p.#{$para}::after {
+    content: "I have #{8 + 2} books on SASS!";
+    color: $red;
+  
+     }
+ 
+h1.#{$h1} { color: hsl(290,60%,70%);}
+p{
+    @debug $para;
+}

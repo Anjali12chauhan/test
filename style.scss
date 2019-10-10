@@ -1,0 +1,67 @@
+@import "partial";
+$green:green;
+$red:red;
+$black:black;
+$yellow:yellow;
+$mustard:#B8860B;
+$size:10px;
+
+
+
+body{
+    background-color: $green!important;
+    min-height: 100%;
+}
+header,footer{
+    ul{ list-style: none;}
+    li{color:$black;}
+    a{color:$black;}
+    
+}
+
+header{
+  
+    a{font-size:$size + 20; &:hover { color:$yellow; }}
+    ul{overflow: hidden;}
+    li{
+        margin-left:$size * 2;
+        float: left;
+        font-size:$size + (10px * 2);
+       }
+   
+}
+.style{font-size:$size * 5; 
+    @at-root {
+        .para1{
+           
+           font-style: bold;
+           color: $mustard;
+        }}}
+
+.head{
+    @extend .style;
+}
+.cont{
+           color:$red;
+        }
+// @mixin style {
+//     .cont{
+//        color:$red;
+//     }
+//  }
+//  @include style;
+ 
+// .mid {
+//     p{
+//         color:$red;
+//     }
+// }
+footer{
+    ul{padding-left:0;}
+    width: 100%;
+    height: $size * 10;
+    position: absolute;
+    bottom: $size * 5;
+    left: 0;
+    
+}

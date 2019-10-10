@@ -1,0 +1,72 @@
+p.para {
+  color: red;
+}
+@media only screen and (max-width: 768px) {
+  p.para {
+    color: yellow;
+  }
+}
+
+p.para::after {
+  content: "I have 10 books on SASS!";
+  color: red;
+}
+
+h1.h1 {
+  color: #d185e0;
+}
+
+body {
+  background-color: green !important;
+  min-height: 100%;
+}
+
+header ul, footer ul {
+  list-style: none;
+}
+header li, footer li {
+  color: black;
+}
+header a, footer a {
+  color: black;
+}
+
+header a {
+  font-size: 30px;
+}
+header a:hover {
+  color: yellow;
+}
+header ul {
+  overflow: hidden;
+}
+header li {
+  margin-left: 20px;
+  float: left;
+  font-size: 30px;
+}
+
+.style, .head {
+  font-size: 50px;
+}
+.para1 {
+  font-style: bold;
+  color: #B8860B;
+}
+
+.cont {
+  color: red;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+}
+footer ul {
+  padding-left: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
